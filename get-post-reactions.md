@@ -13,7 +13,7 @@ GET http://graph.scanfb.top/graphql?action=post_reactions&post_id=75233776076844
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `access_token` | `string` | **Bắt buộc**. Miễn phí, liên hệ Kiệt để nhận Token |
+| `access_token` | `string` | **Bắt buộc**. Token trên được chia sẽ công khai, nhiều người dùng, request có thể sẽ chậm. Liên hệ Kiệt để nhận Token riêng miễn phí |
 | `post_id` | `string` | **Bắt buộc**. ID bài viết, dạng số, không có dấu _ |
 | `cursor` | `string` |  Request đầu tiên có thể để trống, lấy trong response truyền vào cho request tiếp theo |
 
