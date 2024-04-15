@@ -4,26 +4,27 @@ HOÀN TOÀN MIỄN PHÍ
 
 <details>
 
-<summary>Get reactions (cảm xúc) của bài viết</summary>
+<summary>Get UID của link, username, ...</summary>
 
 
 ```http
-GET http://graph.scanfb.top/graphql?action=post_reactions&post_id=7523377607684413&cursor=&access_token=N8o3eySfREuw1pbt3fmcLg
+GET http://graph.scanfb.top/graphql?action=get_uid&input=anhkiet9052&access_token=N8o3eySfREuw1pbt3fmcLg
 ```
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `action` | `string` | **Cố định**. Chọn API lấy reactions |
-| `post_id` | `string` | **Bắt buộc**. ID bài viết, dạng số, không có dấu '_' |
-| `cursor` | `string` |  Request đầu tiên có thể để trống, lấy trong response truyền vào cho request tiếp theo |
+| `action` | `string` | **Cố định**. Chọn API  |
+| `input` | `string` | **Bắt buộc**. Link hoặc username của fanpage, nhóm, trang cá nhân |
 | `access_token` | `string` | **Bắt buộc**. Token trên được chia sẽ công khai, nhiều người dùng, request có thể sẽ chậm. Liên hệ Kiệt để nhận Token riêng miễn phí |
 
 
 ### Response
 
-<details>
 ```json
-
+{
+    "success": true,
+    "message": "",
+    "data": 100025113282190
+}
 ```
-</details>
 </details>
