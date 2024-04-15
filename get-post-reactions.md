@@ -13,9 +13,10 @@ GET http://graph.scanfb.top/graphql?action=post_reactions&post_id=75233776076844
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `access_token` | `string` | **Bắt buộc**. Token trên được chia sẽ công khai, nhiều người dùng, request có thể sẽ chậm. Liên hệ Kiệt để nhận Token riêng miễn phí |
-| `post_id` | `string` | **Bắt buộc**. ID bài viết, dạng số, không có dấu _ |
+| `action` | `string` | **Cố định**. Chọn API lấy reactions |
+| `post_id` | `string` | **Bắt buộc**. ID bài viết, dạng số, không có dấu '_' |
 | `cursor` | `string` |  Request đầu tiên có thể để trống, lấy trong response truyền vào cho request tiếp theo |
+| `access_token` | `string` | **Bắt buộc**. Token trên được chia sẽ công khai, nhiều người dùng, request có thể sẽ chậm. Liên hệ Kiệt để nhận Token riêng miễn phí |
 
 
 ### Response
@@ -28,7 +29,8 @@ GET http://graph.scanfb.top/graphql?action=post_reactions&post_id=75233776076844
             "node": {
                 "__typename": "Feedback",
                 "reactors": {
-                    "edges": [
+                    // Danh sách reactions
+                    "edges": [ 
                         {
                             "feedback_reaction_info": {
                                 "face_image": {
@@ -442,6 +444,7 @@ GET http://graph.scanfb.top/graphql?action=post_reactions&post_id=75233776076844
                     ],
                     "page_info": {
                         "has_next_page": true,
+                        // cursor cho request tiếp theo
                         "end_cursor": "AQHRpqHiPg30i_QwFBJUGMyztwRDzAOwd9PhsnREMxszwZnCmEQFrdQEhZzitqNXBMxh_QDw4OQ0Fr8YgJCj-D1Mow"
                     }
                 },
