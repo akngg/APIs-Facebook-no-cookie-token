@@ -2,9 +2,7 @@
 API lấy data facebook không cần dùng cookie hay token
 HOÀN TOÀN MIỄN PHÍ
 
-<details>
-
-<summary>API miễn phí thay thế cho Graph Facebook API</summary>
+## API miễn phí thay thế cho Graph Facebook API
 
 ### URL ban đầu của Graph Facebook API
 
@@ -33,4 +31,3 @@ GET http://graph.scanfb.top/graph/{YOUR PATH AND PARAM}...&access_token=N8o3eySf
     "data": {Graph Facebook API responses}
 }
 ```
-</details>
