@@ -2,36 +2,43 @@
 
 ### >>> [RapidAPI](https://rapidapi.com/tml25092004/api/facebook-data-api2)
 
-# APIs-Facebook-no-cookie-token
-API lấy data facebook không cần dùng cookie hay token
-HOÀN TOÀN MIỄN PHÍ
+# Facebook Graph APIs WITHOUT ACCESS_TOKEN - Best Alternative API of Graph Facebook API
+API to get facebook data without using cookies or access_token
 
-## API miễn phí thay thế cho Graph Facebook API
+### FREE EXAMPLE
+```http
+GET http://graph.scanfb.top/graph/v19.0/100025113282190/feed?fields=from%2Cid%2Ccreated_time%2Cmessage%2Cattachments%7Bmedia%2Ctarget%2Ctitle%2Ctype%2Curl%2Csubattachments.limit(100)%7D%2Ccomments.summary(total_count).limit(0)%2Creactions.summary(total_count).limit(0)%2Cshares&access_token=N8o3eySfREuw1pbt3fmcLg
+```
 
-### URL ban đầu của Graph Facebook API
+# FREE Trial when contact to me :
+- Telegram : https://t.me/anhkiet9052
+- Facebook : https://fb.com/anhkiet9052
+- Messenger : https://m.me/anhkiet9052
+
+### Original URL of Graph Facebook API
 
 ```http
 GET http://graph.facebook.com/{YOUR PATH AND PARAM}...
 ```
 
-### URL thay thế
+### Alternative URL
 
 ```http
 GET http://graph.scanfb.top/graph/{YOUR PATH AND PARAM}...&access_token=N8o3eySfREuw1pbt3fmcLg
 ```
 
-| Parameter | Type     | Description                |
+| Parameter | Type | Description |
 | :-------- | :------- | :------------------------- |
-| `access_token` | `string` | **Bắt buộc**. Token trên được chia sẽ công khai, nhiều người dùng, request có thể sẽ chậm. Liên hệ Kiệt để nhận Token riêng miễn phí |
+| `access_token` | `string` | **Required**. The above token is shared publicly, many users, the request may be slow. Contact Kiet to receive a free private Token |
 
-### Hoạt động cho tất cả endpoint của Graph Facebook API
+### Works for all Graph Facebook API endpoints
 
 ### Response
 
 ```json
 {
-    "success": true,
-    "message": "",
-    "data": {Graph Facebook API responses}
+"success": true,
+"message": "",
+"data": {Graph Facebook API responses}
 }
 ```
