@@ -1,13 +1,11 @@
-### >>> [Home page](http://graph.scanfb.top)
-
-### >>> [RapidAPI](https://rapidapi.com/tml25092004/api/facebook-data-api2)
+### >>> [Home page](https://akng.io.vn)
 
 # Facebook Graph APIs WITHOUT ACCESS_TOKEN - Best Alternative API of Graph Facebook API
 API to get facebook data without using cookies or access_token
 
 ### FREE EXAMPLE
 ```http
-GET http://graph.scanfb.top/graph/v19.0/100025113282190/feed?fields=from%2Cid%2Ccreated_time%2Cmessage%2Cattachments%7Bmedia%2Ctarget%2Ctitle%2Ctype%2Curl%2Csubattachments.limit(100)%7D%2Ccomments.summary(total_count).limit(0)%2Creactions.summary(total_count).limit(0)%2Cshares&access_token=N8o3eySfREuw1pbt3fmcLg
+GET https://api.akng.io.vn/graph/v19.0/100025113282190/feed?fields=from%2Cid%2Ccreated_time%2Cmessage%2Cattachments%7Bmedia%2Ctarget%2Ctitle%2Ctype%2Curl%2Csubattachments.limit(100)%7D%2Ccomments.summary(total_count).limit(0)%2Creactions.summary(total_count).limit(0)%2Cshares&access_token=N8o3eySfREuw1pbt3fmcLg
 ```
 
 # FREE Trial when contact to me :
@@ -24,7 +22,7 @@ GET http://graph.facebook.com/{YOUR PATH AND PARAM}...
 ### Alternative URL
 
 ```http
-GET http://graph.scanfb.top/graph/{YOUR PATH AND PARAM}...&access_token=N8o3eySfREuw1pbt3fmcLg
+GET https://api.akng.io.vn/graph/{YOUR PATH AND PARAM}...&access_token=N8o3eySfREuw1pbt3fmcLg
 ```
 
 | Parameter | Type | Description |
